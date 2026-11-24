@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-to-Convert-to-voice</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Popins', sans-serif;
+        }
+       .hero{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: linear-gradient(45deg, #010758, #490d61);
+       } 
+       .hero h1{
+        font-size: 45px;
+        font-weight: 500;
+        margin-top: -50px;
+        margin-bottom: 50px;
+        color: #fff;
+       }
+       .hero h1 span{
+        color: #ff2963;
+       }
+       
+       textarea{
+        width: 550px;
+        height: 250px;
+        background: #403d84;
+        color: #fff;
+        border: 0;
+        outline: 0;
+        border-radius: 10px;
+        resize: none;
+        margin-bottom: 30px;
+        padding: 20px !important;
+        font-size: 18px;
+       }
+      textarea::placeholder{
+          color: #fff;
+      }
+      .row{
+        width: 550px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      button{
+        background: #ff2693;
+        color: #fff;
+        font-size: 16px;
+        border-radius: 35px;
+        padding: 10px 20px;
+        cursor: pointer;
+        outline: 0;
+        border: 0;
+        display: flex;
+        align-items: center;
+      }
+      .fa-circle-play{
+         font-size: 16px;
+         margin-right: 10px;
+      }
+      select{
+        flex: 1;
+        color: #fff;
+        background-color: #403d84 !important;
+        height: 50px;
+        padding: 0 20px;
+        outline: 0;
+        border: 0;
+        border-radius: 35px;
+        appearance: none;
+        background-image: url("./angle-down-solid\ \(1\).png");
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position-x:calc(100% - 20px);
+        background-position-y: 20px;
+      }
+    </style>
+</head>
+<body>
+    <div class="hero">
+      <h1>Text to Speech<span> Converter</span></h1>
+      <textarea  id="" placeholder="Write anything here..."></textarea>
+      <div class="row">
+          <select>
+        
+          </select>
+          <button><i class="fa-solid fa-circle-play"></i> listen</button>
+      </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
